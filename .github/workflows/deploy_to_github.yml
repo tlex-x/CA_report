@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: "main" # Or "master" depending on your default branch name
+    branches: "main" # Runs every time you push to the main branch
 
 permissions:
   contents: read
@@ -31,8 +31,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # this should match the output folder of your build tool (usually 'dist')
-          path: './dist'
+          path: './dist' # Vite builds go to the dist folder
 
   deploy:
     needs: build_site
