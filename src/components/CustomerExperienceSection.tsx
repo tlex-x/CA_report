@@ -101,10 +101,10 @@ export const CustomerExperienceSection: React.FC<CustomerExperienceSectionProps>
             Trải Nghiệm Khách Hàng, Đánh Giá App & Ma Trận Biểu Phí 20 CTCK
           </h2>
           <p className="text-slate-600 text-xs sm:text-sm mt-1">
-            Tổng hợp khảo sát thực tế trải nghiệm nền tảng số từ App Store/Google Play và đối chiếu chi tiết biểu phí giao dịch, lãi suất Margin theo <b>data_brocoli - other_sources</b>.
+            Tổng hợp khảo sát thực tế trải nghiệm nền tảng số từ App Store/Google Play và đối chiếu chi tiết biểu phí giao dịch, lãi suất Margin công bố chính thức của 20 CTCK.
           </p>
         </div>
-        <SourceBadge sourceKey="TIER3_UX" detail="data_brocoli - other_sources" onOpenSourceModal={onOpenSourceModal} />
+        <SourceBadge sourceKey="TIER3_UX" detail="Khảo sát biểu phí & trải nghiệm" onOpenSourceModal={onOpenSourceModal} />
       </div>
 
       {/* Part A: App Store UX & Platform Ratings */}
@@ -267,7 +267,7 @@ export const CustomerExperienceSection: React.FC<CustomerExperienceSectionProps>
                           <span className="font-bold font-mono">{data.tradingFee === 0 ? '0.00% (Zero-Fee)' : `${data.tradingFee}%`}</span>
                         </div>
                         <div className="text-[10px] text-slate-400 pt-1 italic">
-                          Nguồn: data_brocoli - other_sources
+                          Nguồn: Biểu phí công bố chính thức & Khảo sát thị trường
                         </div>
                       </div>
                     );

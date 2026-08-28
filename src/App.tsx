@@ -5,6 +5,7 @@ import { MarketDefinitionSection } from './components/MarketDefinitionSection';
 import { QuantitativeSection } from './components/QuantitativeSection';
 import { ServiceBenchmarkSection } from './components/ServiceBenchmarkSection';
 import { CustomerExperienceSection } from './components/CustomerExperienceSection';
+import { CompetitiveLandscapeSection } from './components/CompetitiveLandscapeSection';
 import { StrategicRecommendationsSection } from './components/StrategicRecommendationsSection';
 import { SourceProvenanceModal } from './components/SourceProvenanceModal';
 import { MethodologyModal } from './components/MethodologyModal';
@@ -149,7 +150,15 @@ export default function App() {
           />
         </div>
 
-        {/* 5.6 Strategic Recommendations & AI Adoption */}
+        {/* 5.6 Competitive Landscape: Direct (Selected Top 20) & Indirect (Media, Data, Platform) */}
+        <div className="bg-white rounded-2xl p-6 sm:p-7 text-slate-900 shadow-xs border border-slate-200">
+          <CompetitiveLandscapeSection
+            onOpenSourceModal={handleOpenSourceModal}
+            onSelectCompany={handleSelectCompany}
+          />
+        </div>
+
+        {/* 5.7 Strategic Recommendations & AI Adoption */}
         <div className="bg-white rounded-2xl p-6 sm:p-7 text-slate-900 shadow-xs border border-slate-200">
           <StrategicRecommendationsSection
             onOpenSourceModal={handleOpenSourceModal}

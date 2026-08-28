@@ -176,9 +176,6 @@ export const ExecutiveSummarySection: React.FC<ExecutiveSummarySectionProps> = (
             </p>
             <div className="space-y-2 pt-2">
               <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs text-slate-700">
-                <b>Phân hóa DT tư vấn:</b> VPBankS (353,99 tỷ), TCBS (148,42 tỷ), HDBS (120 tỷ) và SHS (72,21 tỷ) chiếm hơn 85% thị trường.
-              </div>
-              <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs text-slate-700">
                 <b>15/20 CTCK chưa tách bạch:</b> Doanh thu tư vấn đầu tư thường được gom chung vào phí môi giới hoặc chưa thương mại hóa riêng.
               </div>
             </div>

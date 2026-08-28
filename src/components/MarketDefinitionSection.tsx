@@ -78,6 +78,109 @@ export const MarketDefinitionSection: React.FC<MarketDefinitionSectionProps> = (
         <SourceBadge sourceKey="TIER1_FINANCIAL" detail="Phân loại doanh nghiệp" onOpenSourceModal={onOpenSourceModal} />
       </div>
 
+      {/* Explicit Regulatory & Service Scope Framework: 2.1 & 2.2 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {/* 2.1 Tư vấn đầu tư chứng khoán */}
+        <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+          <div className="flex items-center justify-between border-b border-slate-200 pb-2.5">
+            <div className="flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">
+                2.1
+              </div>
+              <h3 className="font-bold text-slate-900 text-sm sm:text-base">
+                Tư vấn đầu tư chứng khoán
+              </h3>
+            </div>
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100/80 text-emerald-800 border border-emerald-200 uppercase tracking-wider">
+              Khách hàng Cá nhân & Tổ chức
+            </span>
+          </div>
+
+          <p className="text-xs font-semibold text-slate-700">
+            Relevant services include:
+          </p>
+
+          <ul className="space-y-2 text-xs text-slate-700">
+            <li className="flex items-start gap-2.5 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed"><b>Tư vấn chiến lược và kỹ thuật giao dịch</b></span>
+            </li>
+            <li className="flex items-start gap-2.5 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed"><b>Cung cấp kết quả phân tích chứng khoán</b></span>
+            </li>
+            <li className="flex items-start gap-2.5 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed"><b>Cung cấp kết quả phân tích thị trường chứng khoán</b></span>
+            </li>
+          </ul>
+
+          <div className="pt-2 text-[11px] text-slate-500 italic">
+            * Căn cứ quy định tại Luật Chứng khoán Việt Nam về nghiệp vụ tư vấn đầu tư chứng khoán độc lập với nghiệp vụ môi giới.
+          </div>
+        </div>
+
+        {/* 2.2 Tư vấn tài chính */}
+        <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+          <div className="flex items-center justify-between border-b border-slate-200 pb-2.5">
+            <div className="flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-xs">
+                2.2
+              </div>
+              <h3 className="font-bold text-slate-900 text-sm sm:text-base">
+                Tư vấn tài chính
+              </h3>
+            </div>
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-100/80 text-blue-800 border border-blue-200 uppercase tracking-wider">
+              Khách hàng Doanh nghiệp / IB
+            </span>
+          </div>
+
+          <p className="text-xs font-semibold text-slate-700">
+            Relevant services include:
+          </p>
+
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+            <li className="flex items-start gap-2 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed">Tư vấn tái cơ cấu tài chính doanh nghiệp</span>
+            </li>
+            <li className="flex items-start gap-2 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed">Thâu tóm, sáp nhập doanh nghiệp (M&A)</span>
+            </li>
+            <li className="flex items-start gap-2 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed">Tư vấn quản trị công ty cổ phần</span>
+            </li>
+            <li className="flex items-start gap-2 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed">Tư vấn chào bán chứng khoán (ECM/DCM)</span>
+            </li>
+            <li className="flex items-start gap-2 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed">Tư vấn niêm yết chứng khoán / listing</span>
+            </li>
+            <li className="flex items-start gap-2 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed">Tư vấn cổ phần hóa</span>
+            </li>
+            <li className="flex items-start gap-2 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed">Xác định giá trị doanh nghiệp</span>
+            </li>
+            <li className="flex items-start gap-2 p-2 rounded-lg bg-white border border-slate-200 shadow-xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-1.5 shrink-0"></span>
+              <span className="leading-relaxed">Các dịch vụ tư vấn tài chính khác phù hợp pháp luật</span>
+            </li>
+          </ul>
+
+          <div className="pt-2 text-[11px] text-slate-500 italic">
+            * Nguồn doanh thu được ghi nhận trong chỉ tiêu "Doanh thu hoạt động tư vấn tài chính" trên BCTC chuẩn mực kiểm toán.
+          </div>
+        </div>
+      </div>
+
       {/* Concept Architecture Breakdown Bento Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {definitions.map((item, index) => {

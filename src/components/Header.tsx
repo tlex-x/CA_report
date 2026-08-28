@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, FileText, Database, Layers, BarChart3, Award, Sparkles, BookOpen, Compass } from 'lucide-react';
+import { ShieldCheck, FileText, Database, Layers, BarChart3, Award, Sparkles, BookOpen, Compass, Users } from 'lucide-react';
 
 interface HeaderProps {
   activeSection: string;
@@ -20,7 +20,8 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'quantitative-comparison', label: '5.3 So sánh định lượng', icon: BarChart3 },
     { id: 'service-benchmark', label: '5.4 Đánh giá dịch vụ', icon: Compass },
     { id: 'customer-experience', label: '5.5 Trải nghiệm & Biểu phí', icon: Award },
-    { id: 'strategic-recommendations', label: '5.6 Khuyến nghị & AI', icon: Layers }
+    { id: 'competitive-landscape', label: '5.6 Đối thủ toàn cảnh', icon: Users },
+    { id: 'strategic-recommendations', label: '5.7 Khuyến nghị & AI', icon: Layers }
   ];
 
   const scrollToSection = (id: string) => {
