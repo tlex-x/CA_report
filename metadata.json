@@ -1,0 +1,6 @@
+{
+  "name": "Báo cáo Phân tích Đối thủ Ngành Chứng khoán Việt Nam",
+  "description": "Báo cáo chiến lược và phân tích đối thủ cạnh tranh ngành chứng khoán Việt Nam 6T/2026 tương tác chuyên sâu, chuẩn dữ liệu nội bộ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
